@@ -41,7 +41,8 @@ int main() {
   cudaMalloc(&d_C, M * K * sizeof(float));
 
   // Copy input data from host to device
-  cudaMemcpy(d_A, h_A, M * N * sizeof(float), cudaMemcpyHostToDevice);
+  cudaMemcpy(d_A, h_A, M * N * sizeof(float),
+             cudaMemcpyHostToDevice); // void *dst
   cudaMemcpy(d_B, h_B, N * K * sizeof(float), cudaMemcpyHostToDevice);
 
   // Set up execution configuration

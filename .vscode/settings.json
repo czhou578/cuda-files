@@ -7,5 +7,8 @@
     "C_Cpp.default.compilerPath": "/usr/local/cuda/bin/nvcc",
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
     "C_Cpp.intelliSenseEngine": "default",
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
